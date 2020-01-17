@@ -174,13 +174,6 @@ Qu...
 
 
 
-    
-<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
-
-    
-<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-
-
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
@@ -324,7 +317,7 @@ Qu...
         var typedTextEl = $('.typed-text');
         if (typedTextEl && typedTextEl.length > 0) {
             var typed = new Typed('.typed-text', {
-                strings: ["Busy collecting bees， not in front of people talk with eloquence.", "忙于采集的蜜蜂，无暇在人前高谈阔论."],
+                strings: ["Think like an artist, develop like an artisan", "艺术家思维去思考问题，工匠创造精神去开发"],
                 typeSpeed: 90,
                 loop: true,
                 loopCount: Infinity,
@@ -340,6 +333,40 @@ Qu...
     }
 </script>
 
+
+    
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+    <script>
+
+        var valine = new Valine();
+
+        function initValine(path) {
+            if (!path) path = window.location.pathname;
+            let language = 'zh-Hans';
+            if (!language) {
+                language = 'en';
+            } else {
+                language = language.toLowerCase();
+            }
+            valine.init({
+                el: '#vcomments',
+                appId: 'DGS6gaH8Mzl4G3O7yocUGbgA-gzGzoHsz',
+                appKey: 'yavg1141LON8Olo3mNzdQI6P',
+                notify: 'false',
+                verify: 'false',
+                avatar: 'mp',
+                placeholder: 'Leave your throughs behind~',
+                visitor: 'true',
+                path: path,
+                lang: language
+            });
+        }
+
+        $(document).ready(function () {
+            initValine();
+        });
+    </script>
 
 
 
