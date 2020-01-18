@@ -40,18 +40,18 @@ Startquestion1ERROR Deployer not found: g,">
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 
-<body class="loading">
-    <div class="loader">
-        <div class="la-ball-atom la-2x">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <body class="loading">
+        <div class="loader">
+            <div class="la-ball-atom la-2x">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-    </div>
-    <span id="config-title" style="display:none">紫线博客</span>
-    <div id="loader"></div>
-    <div id="single">
+        <span id="config-title" style="display:none">紫线博客</span>
+        <div id="loader"></div>
+        <div id="single">
     <div class="scrollbar gradient-bg-rev"></div>
 <div id="top" style="display: block;">
     <div class="bar" style="width: 0;"></div>
@@ -182,7 +182,7 @@ Startquestion1ERROR Deployer not found: g,">
                     </dl>
                 </div>
                 <ul>
-                    <li><a href="/">2 <p>Articles</p></a></li>
+                    <li><a href="/">3 <p>Articles</p></a></li>
                     <li><a href="/categories">0 <p>Categories</p></a></li>
                     <li><a href="/tags">1 <p>Tags</p></a></li>
                 </ul>
@@ -204,27 +204,31 @@ Startquestion1ERROR Deployer not found: g,">
 
         </div>
 </div>
-    <div id="back-to-top" class="animated fadeIn faster">
-        <div class="flow"></div>
-        <span class="percentage animated fadeIn faster">0%</span>
-        <span class="iconfont icon-top02 animated fadeIn faster"></span>
-    </div>
-</body>
-<footer>
-    <p class="copyright" id="copyright">
-        &copy; 2020
-        <span class="gradient-text">
+            <div id="back-to-top" class="animated fadeIn faster">
+                <div class="flow"></div>
+                <span class="percentage animated fadeIn faster">0%</span>
+                <span class="iconfont icon-top02 animated fadeIn faster"></span>
+            </div>
+            {% if theme.canvas_nest %}
+            <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+            {% endif %}
+    </body>
+    <footer>
+        <p class="copyright" id="copyright">
+            &copy;
+            2020
+                <span class="gradient-text">
             紫线
-        </span>.
-        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        Theme
-        <span class="gradient-text">
+        </span>. Powered by
+                <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+                    Theme
+                    <span class="gradient-text">
             <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
         </span>
-        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
-    </p>
-</footer>
-
+                    <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+        </p>
+    </footer>
+    
 <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <script>
@@ -282,7 +286,7 @@ Startquestion1ERROR Deployer not found: g,">
 </script>
 
 
-
+        
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
@@ -479,4 +483,4 @@ Startquestion1ERROR Deployer not found: g,">
 
 
 
-</html>
+            </html>
