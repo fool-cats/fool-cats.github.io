@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>2020书单</title>
+    <url>/2020/01/18/post/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>读书清单</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>My New Post</title>
+    <url>/2020/01/18/My-New-Post/</url>
+    <content><![CDATA[<p>欢迎您来访<a href="https://fool-cats.github.io/">紫线博客</a><br>具体如何搭建请自行百度或Google，<a href="https://hexo.io/" target="_blank" rel="noopener">传送门</a><br>本文主要介绍我建站的时候遇到的问题，希望可以帮到您.</p>
+<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="question1"><a href="#question1" class="headerlink" title="question1"></a>question1</h3><pre><code class="Bash">ERROR Deployer not found: git</code></pre>
+<p>Solution:</p>
+<pre><code class="Bash">$ npm install hexo-deployer-git --save</code></pre>
+<h3 id="question2"><a href="#question2" class="headerlink" title="question2"></a>question2</h3><pre><code class="Bash">ERROR cant&#39;t find &quot;xxx&quot;</code></pre>
+<p>xxx代表的是错误的内容，若按照以下方法后仍出现ERROR<br>则重复操作，直至不再出现ERROE为止.<br>Solution:</p>
+<pre><code class="Bash">$ npm install xxx --save</code></pre>
+]]></content>
+      <tags>
+        <tag>创建博客的common question</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/17/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
