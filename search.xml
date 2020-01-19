@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>英语听说笔记</title>
-    <url>/2020/01/19/%E8%8B%B1%E8%AF%AD%E5%90%AC%E8%AF%B4%E7%AC%94%E8%AE%B0/</url>
+    <title>post_name</title>
+    <url>/2020/01/19/post-name/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>英语口语笔记</title>
     <url>/2020/01/18/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><img src="/images/En/png" alt=""></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
   </entry>
   <entry>
     <title>2020书单</title>
@@ -64,16 +68,25 @@
       </categories>
   </entry>
   <entry>
-    <title>My New Post</title>
+    <title>创建博客时遇到的问题</title>
     <url>/2020/01/18/My-New-Post/</url>
     <content><![CDATA[<p>欢迎您来访<a href="https://fool-cats.github.io/">紫线博客</a><br>具体如何搭建请自行百度或Google，<a href="https://hexo.io/" target="_blank" rel="noopener">传送门</a><br>本文主要介绍我建站的时候遇到的问题，希望可以帮到您.</p>
-<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="question1"><a href="#question1" class="headerlink" title="question1"></a>question1</h3><pre><code class="Bash">ERROR Deployer not found: git</code></pre>
+<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="question1"><a href="#question1" class="headerlink" title="question1"></a>question1</h3><p>使用git部署时发现如下提示</p>
+<pre><code class="Bash">ERROR Deployer not found: git</code></pre>
 <p>Solution:</p>
 <pre><code class="Bash">$ npm install hexo-deployer-git --save</code></pre>
 <h3 id="question2"><a href="#question2" class="headerlink" title="question2"></a>question2</h3><pre><code class="Bash">ERROR cant&#39;t find &quot;xxx&quot;</code></pre>
 <p>xxx代表的是错误的内容，若按照以下方法后仍出现ERROR<br>则重复操作，直至不再出现ERROE为止.<br>Solution:</p>
 <pre><code class="Bash">$ npm install xxx --save</code></pre>
-]]></content>
+<h3 id="question3"><a href="#question3" class="headerlink" title="question3"></a>question3</h3><p>使用git发文张时出现如下错误<br>ssh: connect to host github.com port 22: Connection refused<br>ERROE:SPAM FAILED<br>原因：config文件丢失<br>Solution：<br>若.ssh文件夹中没有config文件，<br>先在.ssh文件夹右击git bash here输入如下命令<br>创建config文件</p>
+<pre><code class="Bash">touch ~/.ssh/config</code></pre>
+<p>然后点击config使用编辑器（例如visual studio code等）<br>将如下的复制粘贴进去。(<a href="mailto:xxxx@xx.com">xxxx@xx.com</a>代表的是注册GitHub是使用的邮箱)</p>
+<pre><code>Host github.com  
+User xxxx@xx.com  
+Hostname ssh.github.com  
+PreferredAuthentications publickey  
+IdentityFile ~/.ssh/id_rsa  
+Port 443</code></pre>]]></content>
       <tags>
         <tag>创建博客的common question</tag>
       </tags>

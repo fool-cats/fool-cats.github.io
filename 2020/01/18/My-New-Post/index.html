@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>My New Post - 紫线博客</title>
+    <title>创建博客时遇到的问题 - 紫线博客</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
     <meta name="description" content="体验生活，体验人生.,欢迎您来访紫线博客具体如何搭建请自行百度或Google，传送门本文主要介绍我建站的时候遇到的问题，希望可以帮到您.
-Startquestion1ERROR Deployer not found: g,"> 
+Startquestion1使用git部署时发现如下提示
+ERROR Deploy,"> 
     <meta name="author" content="紫线"> 
     <link rel="alternative" href="atom.xml" title="紫线博客" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.jpg"> 
@@ -58,7 +59,7 @@ Startquestion1ERROR Deployer not found: g,">
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://fool-cats.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">My New Post</h3>
+        <h3 class="subtitle">创建博客时遇到的问题</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -92,14 +93,14 @@ Startquestion1ERROR Deployer not found: g,">
                 
                 一月 18, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/01/18/My-New-Post/" title="My New Post" class="">My New Post</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/01/18/My-New-Post/" title="创建博客时遇到的问题" class="">创建博客时遇到的问题</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    818
+                    1.5k
                 </span>
                 
                 
@@ -109,7 +110,7 @@ Startquestion1ERROR Deployer not found: g,">
                 </span>
                 
                 
-                <span id="/2020/01/18/My-New-Post/" class="leancloud_visitors" data-flag-title="My New Post">
+                <span id="/2020/01/18/My-New-Post/" class="leancloud_visitors" data-flag-title="创建博客时遇到的问题">
                     <b class="iconfont icon-read"></b> <i>阅读次数</i>
                     <span class="leancloud-visitors-count">1000000</span>
                 </span>
@@ -140,13 +141,22 @@ Startquestion1ERROR Deployer not found: g,">
     <div class='main'>
         <div class="content markdown animated fadeIn">
             <p>欢迎您来访<a href="https://fool-cats.github.io/">紫线博客</a><br>具体如何搭建请自行百度或Google，<a href="https://hexo.io/" target="_blank" rel="noopener">传送门</a><br>本文主要介绍我建站的时候遇到的问题，希望可以帮到您.</p>
-<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="question1"><a href="#question1" class="headerlink" title="question1"></a>question1</h3><pre><code class="Bash">ERROR Deployer not found: git</code></pre>
+<h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="question1"><a href="#question1" class="headerlink" title="question1"></a>question1</h3><p>使用git部署时发现如下提示</p>
+<pre><code class="Bash">ERROR Deployer not found: git</code></pre>
 <p>Solution:</p>
 <pre><code class="Bash">$ npm install hexo-deployer-git --save</code></pre>
 <h3 id="question2"><a href="#question2" class="headerlink" title="question2"></a>question2</h3><pre><code class="Bash">ERROR cant&#39;t find &quot;xxx&quot;</code></pre>
 <p>xxx代表的是错误的内容，若按照以下方法后仍出现ERROR<br>则重复操作，直至不再出现ERROE为止.<br>Solution:</p>
 <pre><code class="Bash">$ npm install xxx --save</code></pre>
-
+<h3 id="question3"><a href="#question3" class="headerlink" title="question3"></a>question3</h3><p>使用git发文张时出现如下错误<br>ssh: connect to host github.com port 22: Connection refused<br>ERROE:SPAM FAILED<br>原因：config文件丢失<br>Solution：<br>若.ssh文件夹中没有config文件，<br>先在.ssh文件夹右击git bash here输入如下命令<br>创建config文件</p>
+<pre><code class="Bash">touch ~/.ssh/config</code></pre>
+<p>然后点击config使用编辑器（例如visual studio code等）<br>将如下的复制粘贴进去。(<a href="mailto:xxxx@xx.com">xxxx@xx.com</a>代表的是注册GitHub是使用的邮箱)</p>
+<pre><code>Host github.com  
+User xxxx@xx.com  
+Hostname ssh.github.com  
+PreferredAuthentications publickey  
+IdentityFile ~/.ssh/id_rsa  
+Port 443</code></pre>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="true">
@@ -183,7 +193,7 @@ Startquestion1ERROR Deployer not found: g,">
                 </div>
                 <ul>
                     <li><a href="/">5 <p>文章</p></a></li>
-                    <li><a href="/categories">1 <p>分类</p></a></li>
+                    <li><a href="/categories">2 <p>分类</p></a></li>
                     <li><a href="/tags">1 <p>标签</p></a></li>
                 </ul>
             </div>
@@ -193,7 +203,7 @@ Startquestion1ERROR Deployer not found: g,">
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Start"><span class="toc-number">1.</span> <span class="toc-text">Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#question1"><span class="toc-number">1.1.</span> <span class="toc-text">question1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#question2"><span class="toc-number">1.2.</span> <span class="toc-text">question2</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Start"><span class="toc-number">1.</span> <span class="toc-text">Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#question1"><span class="toc-number">1.1.</span> <span class="toc-text">question1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#question2"><span class="toc-number">1.2.</span> <span class="toc-text">question2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#question3"><span class="toc-number">1.3.</span> <span class="toc-text">question3</span></a></li></ol></li></ol>
                 </div>
             </div>
             
